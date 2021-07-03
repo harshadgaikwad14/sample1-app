@@ -1,34 +1,24 @@
 import "./App.css";
 import "bootstrap/dist/css/bootstrap.min.css";
-import Home from "./components/routingdemo/pages/Home";
-import AboutUs from "./components/routingdemo/pages/AboutUs";
-import Contact from "./components/routingdemo/pages/Contact";
-import Navbar from "./components/routingdemo/layout/Navbar";
-import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
-import NotFound from "./components/routingdemo/pages/NotFound";
-import AddUser from "./components/routingdemo/users/AddUser";
-import EditUser from "./components/routingdemo/users/EditUser";
-import ViewUser from "./components/routingdemo/users/ViewUser";
+
+import DynamicForm from "./components/DynamicForm";
 
 function App() {
   return (
     <div className="App">
       {/** 
-      <Examples></Examples>
-      <TodosAppComponent></TodosAppComponent>
+      
+      https://gist.github.com/toofaniCoder/567ba64b9d8422b765b2a73cafb8157b
+      https://www.youtube.com/watch?v=J6Enwuf6vBA&list=PLgzD0aHYwynIkIUlk6BqqNlPgH25vLjPJ&index=1
+      
+      <BasicForm></BasicForm> */}
+
+      {/**
+      
+      Dunamic Form : https://www.youtube.com/watch?v=7fupPfocNy4&list=PLgzD0aHYwynIkIUlk6BqqNlPgH25vLjPJ&index=2
+      
       */}
-      <Router>
-        <Navbar></Navbar>
-        <Switch>
-          <Route exact path="/" component={Home}></Route>
-          <Route exact path="/about" component={AboutUs}></Route>
-          <Route exact path="/contact" component={Contact}></Route>
-          <Route exact path="/users/add" component={AddUser}></Route>
-          <Route exact path="/users/edit/:id" component={EditUser}></Route>
-          <Route exact path="/users/view/:id" component={ViewUser}></Route>
-          <Route exact component={NotFound}></Route>
-        </Switch>
-      </Router>
+      <DynamicForm></DynamicForm>
     </div>
   );
 }
