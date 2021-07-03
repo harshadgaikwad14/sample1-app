@@ -1,9 +1,11 @@
 import "./App.css";
 import "bootstrap/dist/css/bootstrap.min.css";
-
-import FromReset from "./components/FromReset";
+import { useForm, FormProvider } from "react-hook-form";
+import ContextFormMain from "./components/contextForm/ContextFormMain";
 
 function App() {
+  const methods = useForm();
+
   return (
     <div className="App">
       {/** 
@@ -41,10 +43,23 @@ function App() {
       
       Form Data Auto Fillup using Api Calling 
       https://youtu.be/zGC0qe27PKs?list=PLgzD0aHYwynIkIUlk6BqqNlPgH25vLjPJ
+
+       <FromReset></FromReset>
       
       */}
 
-      <FromReset></FromReset>
+      {/** 
+      
+      Form Context emxample for big form
+
+      https://youtu.be/YKVZvkkfsgc?list=PLgzD0aHYwynIkIUlk6BqqNlPgH25vLjPJ
+      
+      */}
+      <FormProvider {...methods}>
+        <div className="container py-4">
+          <ContextFormMain methods={methods} />
+        </div>
+      </FormProvider>
     </div>
   );
 }
