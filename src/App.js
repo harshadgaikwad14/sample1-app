@@ -1,7 +1,7 @@
 import "./App.css";
 import "bootstrap/dist/css/bootstrap.min.css";
 
-import DynamicForm from "./components/DynamicForm";
+import FormValidation from "./components/FormValidation";
 
 function App() {
   return (
@@ -17,8 +17,13 @@ function App() {
       
       Dunamic Form : https://www.youtube.com/watch?v=7fupPfocNy4&list=PLgzD0aHYwynIkIUlk6BqqNlPgH25vLjPJ&index=2
       
-      */}
+     
       <DynamicForm></DynamicForm>
+
+       */}
+
+      {/** Form Validation : https://www.youtube.com/watch?v=AOqPM_c94PQ&list=PLgzD0aHYwynIkIUlk6BqqNlPgH25vLjPJ&index=3 */}
+      <FormValidation></FormValidation>
     </div>
   );
 }
