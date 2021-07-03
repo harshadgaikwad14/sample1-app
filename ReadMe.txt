@@ -79,3 +79,18 @@ https://github.com/toofaniCoder/React-Users
  npm install axios
  
  ================================
+ https://www.youtube.com/watch?v=J6Enwuf6vBA&list=PLgzD0aHYwynIkIUlk6BqqNlPgH25vLjPJ&index=1
+ React Form 
+ npm install react-hook-form
+ 
+ https://www.youtube.com/watch?v=AOqPM_c94PQ&list=PLgzD0aHYwynIkIUlk6BqqNlPgH25vLjPJ&index=3
+ For Validation 
+ npm install classnames
+ 
+ ======
+ Form Advace Validation for Password confirm Match with validate callback function in register
+ https://www.youtube.com/watch?v=VzrAbENZeRM&list=PLgzD0aHYwynIkIUlk6BqqNlPgH25vLjPJ&index=4
+ =============
+ Form Data fillup with predined data using reset function
+ https://youtu.be/zGC0qe27PKs?list=PLgzD0aHYwynIkIUlk6BqqNlPgH25vLjPJ
+ 

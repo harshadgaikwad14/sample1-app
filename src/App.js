@@ -1,7 +1,7 @@
 import "./App.css";
 import "bootstrap/dist/css/bootstrap.min.css";
 
-import AdvanceFormValidation from "./components/AdvanceFormValidation";
+import FromReset from "./components/FromReset";
 
 function App() {
   return (
@@ -28,13 +28,23 @@ function App() {
       
       <FormValidation></FormValidation>
       
-
+*/}
 
       {/** 
         Form Advacne Validation Passowrd Match
         https://www.youtube.com/watch?v=VzrAbENZeRM&list=PLgzD0aHYwynIkIUlk6BqqNlPgH25vLjPJ&index=4
-*/}
-      <AdvanceFormValidation></AdvanceFormValidation>
+<AdvanceFormValidation></AdvanceFormValidation>
+
+      */}
+
+      {/**
+      
+      Form Data Auto Fillup using Api Calling 
+      https://youtu.be/zGC0qe27PKs?list=PLgzD0aHYwynIkIUlk6BqqNlPgH25vLjPJ
+      
+      */}
+
+      <FromReset></FromReset>
     </div>
   );
 }
