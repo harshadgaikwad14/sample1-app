@@ -1,11 +1,9 @@
 import "./App.css";
 import "bootstrap/dist/css/bootstrap.min.css";
-import { useForm, FormProvider } from "react-hook-form";
-import ContextFormMain from "./components/contextForm/ContextFormMain";
+
+import ImageFormValidation from "./components/ImageFormValidation";
 
 function App() {
-  const methods = useForm();
-
   return (
     <div className="App">
       {/** 
@@ -53,13 +51,23 @@ function App() {
       Form Context emxample for big form
 
       https://youtu.be/YKVZvkkfsgc?list=PLgzD0aHYwynIkIUlk6BqqNlPgH25vLjPJ
-      
-      */}
-      <FormProvider {...methods}>
+
+       <FormProvider {...methods}>
         <div className="container py-4">
           <ContextFormMain methods={methods} />
         </div>
       </FormProvider>
+      
+      */}
+
+      {/**
+      
+      File Upload Demo : 
+      https://www.youtube.com/watch?v=b9u62SI90ok&list=PLgzD0aHYwynIkIUlk6BqqNlPgH25vLjPJ&index=7
+      
+      */}
+
+      <ImageFormValidation></ImageFormValidation>
     </div>
   );
 }
