@@ -93,4 +93,15 @@ https://github.com/toofaniCoder/React-Users
  =============
  Form Data fillup with predined data using reset function
  https://youtu.be/zGC0qe27PKs?list=PLgzD0aHYwynIkIUlk6BqqNlPgH25vLjPJ
+
+================================
+Redux Example
+https://www.youtube.com/watch?v=6Q2B7Dv0OiQ
+ Redux Devtool Extension
+      https://addons.mozilla.org/en-US/firefox/addon/reduxdevtools/
+https://jsonplaceholder.typicode.com/
+npm install redux react-redux redux-devtools-extension
+npm install bootstrap
+npm install router-dom
+npm install shortid      
  

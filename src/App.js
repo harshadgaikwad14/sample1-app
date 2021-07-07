@@ -2,10 +2,17 @@ import "./App.css";
 import "bootstrap/dist/css/bootstrap.min.css";
 
 import ImageFormValidation from "./components/ImageFormValidation";
+import Navbar from "./components/reduxContactBook/Navbar";
+import Contacts from "./components/reduxContactBook/Contacts";
+import AddContact from "./components/reduxContactBook/AddContact";
+import EditContact from "./components/reduxContactBook/EditContact";
+import { Provider } from "react-redux";
+import store from "./components/reduxContactBook/store";
+import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 
 function App() {
   return (
-    <div className="App">
+    <div className="card border-0 mb-4">
       {/** 
       
       https://gist.github.com/toofaniCoder/567ba64b9d8422b765b2a73cafb8157b
@@ -64,10 +71,28 @@ function App() {
       
       File Upload Demo : 
       https://www.youtube.com/watch?v=b9u62SI90ok&list=PLgzD0aHYwynIkIUlk6BqqNlPgH25vLjPJ&index=7
-      
+       <ImageFormValidation></ImageFormValidation>
       */}
 
-      <ImageFormValidation></ImageFormValidation>
+      {/**
+      Redux Devtool Extension
+      https://addons.mozilla.org/en-US/firefox/addon/reduxdevtools/
+
+      https://github.com/toofaniCoder/redux-contact-book
+      
+      */}
+      <Provider store={store}>
+        <Router>
+          <Navbar></Navbar>
+          <div className="container py-5">
+            <Switch>
+              <Route exact path="/" component={Contacts} />
+              <Route exact path="/contacts/add" component={AddContact} />
+              <Route exact path="/contacts/edit/:id" component={EditContact} />
+            </Switch>
+          </div>
+        </Router>
+      </Provider>
     </div>
   );
 }
